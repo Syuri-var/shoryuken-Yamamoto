@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()}
         @IBAction func textButton(_ sender: Any) {
@@ -69,7 +71,7 @@ class ViewController: UIViewController {
             let imageHeight = image1.size.height
             
             // UIImageView のインスタンス生成,ダミーでimage1を指定
-            let imageView:UIImageView = UIImageView(image:image1)
+            //let imageView:UIImageView = UIImageView(image:image1)
             
             // 画像サイズからImageViewの大きさを設定していく
             let rect = CGRect(x:0,
